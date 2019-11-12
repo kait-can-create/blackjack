@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blackjack</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/screen.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/screen.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans:700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class='hello-world'></h1>
+    <header>Blackjack</header>
+    <section class="players">
+      <section class="the-dealer">
+        <h2 class="dealer-name">Dealer</h2>
+        <p class="dealer-score">0</p>
+        <section class="dealer-cards">
+          <img class="card-back" src="images/card_back.svg" />
+          <img class="card-back1" src="images/card_back.svg" />
+        </section>
+      </section>
+      <section class="the-player">
+        <h2 class="player-name">Player</h2>
+        <p class="player-score">0</p>
+        <ul class="player-cards"></ul>
+      </section>
+      <section class="buttons">
+        <button class="hit-button">Hit</button>
+        <button class="stand-button">Stand</button>
+        <button class="play-again-button">Play Again</button>
+      </section>
+    </section>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
